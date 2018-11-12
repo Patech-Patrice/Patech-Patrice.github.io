@@ -1,11 +1,11 @@
 # Site settings
 author: Patrice Drayton
-title: 
+title: My Coding Journey
 header-img: img/home-bg.png
 email: draytonpatrice@marilynssecret.org
 copyright_name: Patrice Drayton
 description: > # this means to ignore newlines until "baseurl:"
-  
+  How a non-technical black woman changed her life through coding
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Patech-Patrice

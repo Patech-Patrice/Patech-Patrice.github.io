@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Building my first CLI Application"
-date:       2019-01-31 16:11:15 +0000
+date:       2019-01-31 11:11:16 -0500
 permalink:  building_my_first_cli_application
 ---
 
@@ -21,11 +21,15 @@ Once I had those steps figured out, I needed to choose a website that was scrape
 
 Now we’re off to the races! I know what my application will do and how I want it to interact with users.  Time to write some code! 
 
+**The SetUp**
+
 First things first, you have to create an executable file.  This file is located in the bin/, and code here relates to actually running our program.  Without this directory, we are unable to run our program from the command line, nor will users be able to interact with it.  File permissions must also be given in order to execute a file via command.  Since my project was based on movies, I gave it the name of  top_movies.  The code I would write to interact with the interface would be located in the lib/top_movies/cli.rb, and would be called in the executable file bin/top_movies.   I created a scraper.rb and a movie.rb class, and used the bin/ command to test out my intended code, looking particularly for expected behavior.
 
 My movie.rb class would house all the code about my movie object that I wanted to share with the user.  The categories that will be scraped are listed as attributes of the movie class.
 
 I began by writing the code for a user interface that would mirror the behavior of my app.  I wanted the user to be greeted with a welcome message, and then asked to choose a number from the list of movies that populate.  A nice thing about this process is that you are free to play around with your code as much as you would like.  Functionality and flow are totally up to you, and it was that freedom that made it even more exciting to write.  The data I provided, would go one level deep, giving the user an option to view more information on a movie if they chose to do so.  
+
+**Scraping with Nokogiri**
 
 The scraper.rb class would gather the data from the website of my choice, and use that data to output information back to the user.  Once I successfully scraped the data I needed from the website, it was time to implement that data into my code.  Boy was that fun! Creating variable names, which you wouldn’t think is difficult, actually can be at times.  I scraped data from a list of 100 Top Hollywood Rated Movies, and these movies were accompanied by their year of release, genre, cast, director, a brief synopsis, and the critic review from Timeout.com.  With all of this information, this website proved to be a good fit for what I needed.  In order to scrape the website, I used an HTML Parser called Nokogiri, and Open-URI, a Ruby easy-to-use wrapper for net/http, net/https and net/ftp, and is considered the most popular way to read URL content, as well as make a request to get information or download a file from a particular site.  Nokogiri is a gem library that serves virtually all of the HTML scraping requirements.  To install Nokogiri, one must simply enter gem install nokogiri  in their terminal, and let the rest happen.  This process can take a few minutes, and may or may not be seamless, so patience is key.  It makes sense to install nokogiri, as it is a tool that all developers will likely use the remainder of their career.  If you do find yourself running into issues installing Nokogiri, follow the  official Nokogiri installation guide here.  This guide will walk you through the installation from start to finish.
 
@@ -35,7 +39,9 @@ Once that was complete, I returned to focus on my CLI class, which is where the 
 
 I included some methods that enabled easy navigation from option to option, by implementing some if else statements in my CLI class.  Voila! I know have a fully functioning Ruby command-line-application! 
 
-Before I could officially claim victory, I had to make sure everything was working correctly.  I took care to package, install, and test my gem and made sure to include instructions in the Readme.md on how to package and install the application locally.  You can view my code here.
+**Conclusion**
+
+Before I could officially claim victory, I had to make sure everything was working correctly.  I took care to package, install, and test my gem and made sure to include instructions in the Readme.md on how to package and install the application locally.  You can view my code[ here](https://github.com/Patech-Patrice/top_movies.git).
 
 Building this application was truly a test of the skills and knowledge that I have acquired up to this point as a student at Flatiron School. In the midst of the fear, the long hours, late nights, and arm and back spasms from spending 10-12 hours straight at the computer, I had accomplished a major feat, and it was all worth it!  I am genuinely proud of what I achieved and am looking forward to building more applications in different languages in the future.
 

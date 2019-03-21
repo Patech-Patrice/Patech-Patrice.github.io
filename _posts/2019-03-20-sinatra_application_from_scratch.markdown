@@ -15,11 +15,11 @@ Sinatra is a domain specific language, written by Blake Mizerany,  implemented i
 
 The requirements for this project were:
 
-Build an MVC(models, views, controller)  in Sinatra 
-Use multiple models with at least one has_many and belongs_to relationship
-Have user accounts- users must have the ability to sign up, sign in, and sign out
-Validate user login and input 
-Once logged in, a user must be able to CRUD(create, read, update and destroy) their own resources and not those of another user
+* Build an MVC(models, views, controller)  in Sinatra 
+* Use multiple models with at least one has_many and belongs_to relationship
+* Have user accounts- users must have the ability to sign up, sign in, and sign out
+* Validate user login and input 
+* Once logged in, a user must be able to CRUD(create, read, update and destroy) their own resources and not those of another user
 
 **Building an MVC**
 

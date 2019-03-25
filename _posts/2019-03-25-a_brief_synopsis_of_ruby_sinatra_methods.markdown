@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "A Brief Synopsis of Ruby Sinatra Methods"
-date:       2019-03-25 22:07:36 +0000
+date:       2019-03-25 18:07:37 -0400
 permalink:  a_brief_synopsis_of_ruby_sinatra_methods
 ---
 
@@ -11,16 +11,16 @@ After completing my Sinatra project, I decided to dive a little deeper into some
 **The Bang Operator**
 
 The logical negation operator (!), commonly referred to as the bang operator, reverses the meaning of its operand. The operand must either be a number or an expression that evaluates to be either true or false. The operand is then converted to a boolean value(true or false). The result is true if the converted operand is false, and false if the converted operand is true. Simply put, (!) will convert the argument to a boolean and return the opposite of the boolean value of the operand(e.g. true if it's nil or false, and false otherwise.) When two (!!) are placed together, the second operator negates the first, providing you with a boolean value of the argument(e.g. false for nil or false, true for pretty much everything else). In the examples below, you can see how these operators are used and what the expression evaluates to:
-* 
+ 
 * !!current_user: this helper method returns true or false if a user is logged in or out. 
-* 
+ 
 * !!logged_in?: this helper method returns true or false based on a session created by a user.  In Ruby, the convention is to attach a (?) or (!) when the value you are returning is a boolean.
-* 
-* Current_user != @shoe_entry.user: this line of code states that the current user is not equal to the user of that instance of a shoe entry.  This line would be used in order to protect a user’s entries and make them uneditable by others.
-* 
-* 
 
-** Authenticating Users by Securing Passwords**
+* Current_user != @shoe_entry.user: this line of code states that the current user is not equal to the user of that instance of a shoe entry.  This line would be used in order to protect a user’s entries and make them uneditable by others.
+
+
+
+**** Authenticating Users by Securing Passwords****
 
 Making sure that a user’s data is secure is one of the most important jobs of being a developer. Although people are warned against using the same password across many platforms, some will still do so. For this reason, we developers use an open-source gem called bcrypt.  Bcrypt allows us to run a user’s password through a hashing algorithm that manipulates data so that it can not be un-manipulated. ActiveRecord, a Ruby gem, gives us access to a macro method has_secure_password, that works with bcrypt to give us the ability to secure passwords in the database, and is applied in our user model.
 

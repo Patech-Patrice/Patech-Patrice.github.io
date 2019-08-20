@@ -64,7 +64,7 @@ end
 This validates the presence of a title, stars, and designer.  The :presence validator ensures that there is text inside of the title field, while the :uniqueness validator ensures that a user cannot review the same designer more than once, and provides an error message when a user makes an attempt to duplicate.  
 
 # Conclusion
-Rails is a great framework for any developer at any programming level who would like the ability to quickly start an application with everything you will need in the beginning.   Equipped with a large community of developers who are constantly working to make the features better, Rails has plenty of support if you run into issues in development.  If you would like to view my Rails portfolio project, you can do so [here](:https://github.com/Patech-Patrice/luxcloset//).
+Rails is a great framework for any developer at any programming level who would like the ability to quickly start an application with everything you will need in the beginning.   Equipped with a large community of developers who are constantly working to make the features better, Rails has plenty of support if you run into issues in development.  If you would like to view my Rails portfolio project, you can do so [here](https://github.com/Patech-Patrice/luxcloset//).
 
 
 

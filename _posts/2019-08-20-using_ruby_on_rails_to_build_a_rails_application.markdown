@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Using Ruby on Rails to build a Rails Application"
+title:      "Using Ruby on Rails to build a CRUD Application"
 date:       2019-08-20 11:56:02 -0400
 permalink:  using_ruby_on_rails_to_build_a_rails_application
 ---

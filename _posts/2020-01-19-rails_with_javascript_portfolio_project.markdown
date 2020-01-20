@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails with Javascript Portfolio Project"
-date:       2020-01-20 00:58:52 +0000
+date:       2020-01-19 19:58:53 -0500
 permalink:  rails_with_javascript_portfolio_project
 ---
 
@@ -64,8 +64,11 @@ end
 ```
 
 
-Parameters must be created for the winery because those same parameters must be included in the POST and PATCH requests of the fetch method.  I will provide more details about the Fetch API when I talk about the front-end.  For the representation of the has-many relationship, a winery has many wines they carry at their vineyards.  Since PostgresSQL was the database of choice, I had to make sure to create the database before migration by running rails db:create & then rails db:migrate.  I am now able to run the rails server in my text editor terminal, and access my application which is hosted at localhost:3000.  Since this is an API, my url looks like this ` http://localhost:3000/api/v1/wineries`.
+Parameters must be created for the winery because those same parameters must be included in the POST and PATCH requests of the fetch method.  I will provide more details about the Fetch API when I talk about the front-end.  For the representation of the has-many relationship, a winery has many wines they carry at their vineyards.  Since PostgresSQL was the database of choice, I had to make sure to create the database before migration by running rails db:create & then rails db:migrate.  I am now able to run the rails server in my text editor terminal, and access my application which is hosted at localhost:3000.  Since this is an API, my url looks like this 
 
+```
+ http://localhost:3000/api/v1/wineries
+```
 #  The Frontend
 
 My single page app had to include the use of javascript classes, or object oriented javascript in order to encapsulate data and behavior. Object-Oriented JavaScript is prototype-based so it does not utilize or support class statements. Instead, functions are used to represent a class as well as new objects are derived by using a prototyping technique and by calling the object’s native constructor.  
@@ -83,7 +86,7 @@ class Winery {
     }
 ```
 
-With my objects created and my parameters specified, I am to now implement the fetch method in my single page app.  The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also yields a global fetch() method that lends a simple, logical way to fetch resources asynchronously across networks.  I implemented a getWineries function that would fetch the wineries and the data associated with them, and render the contents to the DOM without redirecting to another page.  This method fires off an AJAX request to the index route in api/v1/wineries.
+With my objects created and my parameters specified, I am now ready to implement the fetch method in my single page app.  The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also yields a global fetch() method that lends a simple, logical way to fetch resources asynchronously across networks.  I implemented a getWineries function that would fetch the wineries and the data associated with them, and render the contents to the DOM without redirecting to another page.  This method fires off an AJAX request to the index route in api/v1/wineries.
 
 
 ```
